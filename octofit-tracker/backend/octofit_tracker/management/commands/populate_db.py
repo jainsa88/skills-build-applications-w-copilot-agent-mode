@@ -1,7 +1,11 @@
 from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
-    help = "Populate MongoDB with test data for octofit_db"
+    """
+    Populate the octofit_db database with test data
+    """
+
+    help = "Populate the octofit_db database with test data"
 
     def handle(self, *args, **kwargs):
         self.stdout.write("Populating octofit_db with test data...")
